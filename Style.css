@@ -1,0 +1,75 @@
+/* ================================================== */
+/* ==========   PÁGINA LOCALIZAÇÃO   ========== */
+/* ================================================== */
+
+.mapa-embed {
+    width: 100%; /* Ocupa toda a section-esquerda */
+    min-height: 450px; /* Altura mínima para o mapa */
+    border: 0;
+    border-radius: 8px; /* Borda suave */
+    padding: 10px; /* Um pequeno respiro */
+}
+
+/* Bloco de informações na section-direita */
+.info-local {
+    width: 100%;
+    max-width: 400px; /* Limita a largura do bloco de texto */
+    text-align: left; /* Alinha o texto à esquerda (mesmo que o bloco esteja centrado) */
+    padding: 0 20px; /* Espaçamento interno */
+}
+
+.info-local h2 {
+    margin-top: 0; /* Remove margem superior do título */
+    font-size: 2.5em; /* Título maior */
+}
+
+.info-local h3 {
+    font-size: 1.5em;
+    color: var(--muted);
+    margin-top: -10px;
+}
+
+.info-local p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Container dos botões de app */
+.app-links {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; /* Botões um abaixo do outro */
+    gap: 12px; /* Espaço entre os botões */
+    width: 100%;
+}
+
+/* Estilo base dos botões de app */
+.btn-app {
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-app:hover {
+    transform: scale(1.03); /* Leve zoom ao passar o mouse */
+    opacity: 0.9;
+}
+
+/* Cores específicas de cada marca */
+.btn-app.uber {
+    background-color: #000000;
+}
+
+.btn-app.gmaps {
+    background-color: #4285F4; /* Azul Google */
+}
+
+.btn-app.waze {
+    background-color: #33CCFF; /* Azul Waze */
+}
